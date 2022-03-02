@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technologies</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+    h1{
+        font-family: serif;
+        text-align: center;
+        color: darkblue;
+    }
+    h2{
+        font-family: "Inconsolata";
+        color: ghostwhite;
+        text-align: left;
+    }
+    h3{
+        font-family: cursive;
+        color: darkgreen;
+        text-align: center;
+    }
+    p{
+        font-family: sans-serif;
+        color: darkorange;
+        font-size: 1.2em;
+        text-indent: 30px;
+    }
+    img{
+        float: left;
+        margin: 20px;
+        height: 100px;
+        width: 120px;
+        /* I used a new CSS cursor property I found on W3Schools that is supposed to change the cursor when you hover over the image */
+        cursor: progress;
+    }
+    body{
+        background-color: grey;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    ul{
+        list-style: none;
+        overflow: hidden;
+    }
+    li{
+        float: left;
+        display: block;
+        text-align: center;
+        background-color: aquamarine;
+        padding: 10px;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: gold;
+        min-width: 120px;
+    }
+    .dropdown-content a{
+        color: aliceblue;
+        padding: 12px 12px;
+        text-decoration: none;
+        text-align: left;
+        display: block;
+    }
+    .dropdown-content a:hover{
+        background-color: yellowgreen;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+</style>
+</head>
+<body>
+    <h1> All About Jonathan Gergis &reg;<a id="About Me"></a></h1> 
+    <hr/>
+  <div>
+      <ul>
+          <li><a href="index.html"></a>Home</li>
+          <li><a href="https://github.com/jgergis1"></a>Github</li>
+          <li class="dropdown">
+            <a href="javascript:void(0)">Homeworks</a>  
+            <div class="dropdown-content">
+                  <a href="HW2-1.html">HW2-1</a>
+                  <a href="HW2-2.html">HW2-2</a>
+                  <a href="HW2-bbc.html">HW-3</a>
+              </div>
+          </li>
+      </ul>
+  </div>
+    <h5>Quick Links <a href="#About Me">About Me</a> <a href="#MyHobbies">My Hobbies</a></h5>
+    <h2>About Me</h2>
+<p> I chose <a href="https://www.babson.edu/">Babson</a> to join a community of business students, to help my endeavors in the life sciences. </p>
+<!-- I used the html tag download that I found on W3Schools so that every time you double click on my image it downloads -->
+<a href=".vscode/images/Headshot.jpg" download=".vscode/images/Headshot.jpg"></a>
+<img src=".vscode/images/Headshot.jpg" height="300" alt="Babson College"/>
+<hr>
+<h4>My Hobbies <a id="My Hobbies"></a></h4>
+<hr>
+<p> My favorite sports are <mark> <a href="https://www.nba.com">Basketball</a> </mark> and <mark> Mixed Martial Arts </mark> </p>
+</body>
+<hr/>
+<a href="sitemap.html">My Work in Web Tech</a>
+<hr>
+<h3>Babson College Location</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.1604312319446!2d-71.26789638454575!3d42.296442079191145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e381418b1914ef%3A0x4ef71f3899e76a89!2sBabson%20College!5e0!3m2!1sen!2sus!4v1645063258329!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</html>
