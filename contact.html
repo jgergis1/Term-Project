@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="egypt, food, culture, religion" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Egyptian</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER ELEMENT -->
+    <header>
+      <img
+        src="images/flag.png"
+        alt="Logo"
+        width="60"
+        height="60"
+        class="logo"
+      />
+      <ul class="navbar">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="religion.html">Religion</a></li>
+        <li><a href="about.html">About</a></li>
+        <li id="selected-nav-item"><a href="#">Contact</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
+      </ul>
+    </header>
+    <!-- CONTENT START -->
+    <div>
+      <img src="images/map.png" usemap="#address" class="map-img" />
+
+      <map name="address">
+        <area
+          target="_blank"
+          shape="rect"
+          coords="26.591172020110573, 29.737763992474772"
+          alt="Location"
+          title="Location"
+          href="https://www.google.com/map"
+        />
+      </map>
+    </div>
+
+    <div class="contact-form-container">
+      <h1>Contact Us</h1>
+      <form action="#" method="POST">
+        <div style="display: flex; justify-content: space-between">
+          <div style="width: 50%">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="First Name"
+            />
+          </div>
+
+          <div style="width: 48%">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+        />
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="">Select Country</option>
+          <option value="egypt">Egypt</option>
+          <option value="dubai">Dubai</option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+        </select>
+        <br /><br />
+        <label for="question">Have you been to Egypt before?</label>
+        <input type="radio" name="agecheck" value="Yes" />Yes
+        <input type="radio" name="agecheck" value="No" />No
+        <br />
+        <br />
+        <br />
+        <label for="query">Subject</label>
+        <textarea
+          id="query"
+          name="query"
+          placeholder="Message"
+          style="height: 250px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <!-- CONTENT END -->
+
+    <!-- FOOTER ELEMENT -->
+    <footer>
+      <p>
+        Egyptian &copy; 2022
+        <a href="mailto:info@escooter.com">info@egyptian.com</a>
+      </p>
+      <div class="social-icon">
+        <img src="images/fb.png" />
+        <img src="images/insta.png" />
+        <img src="images/twitter.png" />
+      </div>
+    </footer>
+  </body>
+</html>

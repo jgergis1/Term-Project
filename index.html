@@ -1,109 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Technologies</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-<style>
-    h1{
-        font-family: serif;
-        text-align: center;
-        color: darkblue;
-    }
-    h2{
-        font-family: "Inconsolata";
-        color: ghostwhite;
-        text-align: left;
-    }
-    h3{
-        font-family: cursive;
-        color: darkgreen;
-        text-align: center;
-    }
-    p{
-        font-family: sans-serif;
-        color: darkorange;
-        font-size: 1.2em;
-        text-indent: 30px;
-    }
-    img{
-        float: left;
-        margin: 20px;
-        height: 100px;
-        width: 120px;
-        /* I used a new CSS cursor property I found on W3Schools that is supposed to change the cursor when you hover over the image */
-        cursor: progress;
-    }
-    body{
-        background-color: grey;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    ul{
-        list-style: none;
-        overflow: hidden;
-    }
-    li{
-        float: left;
-        display: block;
-        text-align: center;
-        background-color: aquamarine;
-        padding: 10px;
-    }
-    .dropdown-content{
-        display: none;
-        position: absolute;
-        background-color: gold;
-        min-width: 120px;
-    }
-    .dropdown-content a{
-        color: aliceblue;
-        padding: 12px 12px;
-        text-decoration: none;
-        text-align: left;
-        display: block;
-    }
-    .dropdown-content a:hover{
-        background-color: yellowgreen;
-    }
-    .dropdown:hover .dropdown-content{
-        display: block;
-    }
-</style>
-</head>
-<body>
-    <h1> All About Jonathan Gergis &reg;<a id="About Me"></a></h1> 
-    <hr/>
-  <div>
-      <ul>
-          <li><a href="index.html"></a>Home</li>
-          <li><a href="https://github.com/jgergis1"></a>Github</li>
-          <li class="dropdown">
-            <a href="javascript:void(0)">Homeworks</a>  
-            <div class="dropdown-content">
-                  <a href="HW2-1.html">HW2-1</a>
-                  <a href="HW2-2.html">HW2-2</a>
-                  <a href="HW2-bbc.html">HW-3</a>
-              </div>
-          </li>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="egypt, food, culture, religion" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Egyptian</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon1.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER ELEMENT -->
+    <header>
+      <img
+        src="images/flag.png"
+        alt="Logo"
+        width="60"
+        height="60"
+        class="logo"
+      />
+      <ul class="navbar">
+        <li id="selected-nav-item">
+          <a href="#">Home</a>
+        </li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="religion.html">Religion</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="sitemap.html">Sitemap</a></li>
       </ul>
-  </div>
-    <h5>Quick Links <a href="#About Me">About Me</a> <a href="#MyHobbies">My Hobbies</a></h5>
-    <h2>About Me</h2>
-<p> I chose <a href="https://www.babson.edu/">Babson</a> to join a community of business students, to help my endeavors in the life sciences. </p>
-<!-- I used the html tag download that I found on W3Schools so that every time you double click on my image it downloads -->
-<a href=".vscode/images/Headshot.jpg" download=".vscode/images/Headshot.jpg"></a>
-<img src=".vscode/images/Headshot.jpg" height="300" alt="Babson College"/>
-<hr>
-<h4>My Hobbies <a id="My Hobbies"></a></h4>
-<hr>
-<p> My favorite sports are <mark> <a href="https://www.nba.com">Basketball</a> </mark> and <mark> Mixed Martial Arts </mark> </p>
-</body>
-<hr/>
-<a href="sitemap.html">My Work in Web Tech</a>
-<hr>
-<h3>Babson College Location</h3>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.1604312319446!2d-71.26789638454575!3d42.296442079191145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e381418b1914ef%3A0x4ef71f3899e76a89!2sBabson%20College!5e0!3m2!1sen!2sus!4v1645063258329!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </header>
+    <!-- CONTENT START -->
+    <div style="height: 400px">
+      <video width="100%" height="400" loop autoplay muted class="banner-video">
+        <source src="videos/intro.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="trends">
+      <h3>WELCOME TO EGYPT</h3>
+    </div>
+
+    <div class="container">
+      <table>
+        <tr>
+          <td>
+            <div class="sections">
+              <img src="images/food2.jpeg" alt="Food" />
+              <h3>Classic</h3>
+              <p>
+                Just some random text, lorem ipsum text praesent tincidunt ipsum
+                lipsum.
+              </p>
+              <button class="read-more-btn">Read More</button>
+            </div>
+          </td>
+          <td>
+            <div class="sections">
+              <img src="images/culture.jpeg" alt="Cluture" />
+              <h3>Steaky</h3>
+              <p>
+                Once again, some random text to lorem lorem lorem lorem ipsum
+                text ipsum lipsum.
+              </p>
+              <button class="read-more-btn">Read More</button>
+            </div>
+          </td>
+          <td>
+            <div class="sections">
+              <img src="images/food.jpeg" alt="Culture" />
+              <h3>Defining</h3>
+              <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+              <button class="read-more-btn">Read More</button>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div class="content-container">
+        <h1>FOOD & DRINKS</h1>
+        <div class="content-left-image">
+          <div class="content-thumb">
+            <img
+              src="images/f1.jpeg"
+              alt="Culture"
+              style="width: 350px; height: 300px"
+            />
+          </div>
+          <div class="content-desc">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              imperdiet, nulla et dictum interdum, nisi lorem egestas odio,
+              vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
+              ultrices nec congue eget, auctor vitae massa. Fusce luctus
+              vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed
+              ornare eu, lobortis in odio. Praesent convallis urna a lacus
+              interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed
+              ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
+              imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+              venenatis. Integer fringilla congue eros non fermentum. Sed
+              dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis
+              diam velit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-section">
+        <div class="row">
+          <div class="column">
+            <img
+              src="images/f1.jpeg"
+              alt="Delicious Meal"
+              title="Delicious Meal"
+              style="width: 200px; height: 200px"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="images/v1.jpeg"
+              alt="Happening Places"
+              title="Happening Places"
+              style="width: 200px; height: 200px"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="images/v2.jpeg"
+              alt="Traditions"
+              title="Traditions"
+              style="width: 200px; height: 200px"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="images/v4.jpeg"
+              alt="Monuments"
+              title="Monuments"
+              style="width: 200px; height: 200px"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="images/a1.jpeg"
+              alt="Ancient History"
+              title="Ancient History"
+              style="width: 200px; height: 200px"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="content-container">
+        <h1>SITES & ATTRACTION</h1>
+        <div class="content-left-image">
+          <div class="content-desc">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              imperdiet, nulla et dictum interdum, nisi lorem egestas odio,
+              vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
+              ultrices nec congue eget, auctor vitae massa. Fusce luctus
+              vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed
+              ornare eu, lobortis in odio. Praesent convallis urna a lacus
+              interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed
+              ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
+              imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+              venenatis. Integer fringilla congue eros non fermentum. Sed
+              dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis
+              diam velit.
+            </p>
+          </div>
+          <div class="content-thumb">
+            <img
+              src="images/v1.jpeg"
+              alt="Culture"
+              style="width: 350px; height: 300px; float: right"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="places-to-visit">
+        <h2>The Egyptian Museum</h2>
+        <h2>Valley of the Kings</h2>
+        <h2>Abu Simbel Temples</h2>
+        <h2>Karnak</h2>
+        <h2>Philae</h2>
+      </div>
+    </div>
+
+    <!-- CONTENT END -->
+
+    <!-- FOOTER ELEMENT -->
+    <footer>
+      <p>
+        Egyptian &copy; 2022
+        <a href="mailto:info@escooter.com">info@egyptian.com</a>
+      </p>
+      <div class="social-icon">
+        <img src="images/fb.png" />
+        <img src="images/insta.png" />
+        <img src="images/twitter.png" />
+      </div>
+    </footer>
+  </body>
 </html>
