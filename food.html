@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Egyptian</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="icon" type="image/x-icon" href="images/favicon1.ico" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/script.js"></script>
   </head>
-  <body>
+  <body onload="onLoadProductPage()">
     <!-- HEADER ELEMENT -->
     <header>
       <img
@@ -19,7 +24,14 @@
         height="60"
         class="logo"
       />
-      <ul class="navbar">
+      <a
+        href="javascript:void(0);"
+        class="horizontal-bars"
+        onclick="openMenu()"
+      >
+        <i class="fa fa-bars"></i>
+      </a>
+      <ul class="topnav" id="topNavMenu">
         <li>
           <a href="index.html">Home</a>
         </li>
@@ -32,13 +44,51 @@
       </ul>
     </header>
     <!-- CONTENT START -->
-    <div style="height: 400px">
-      <img src="images/banner.jpeg" alt="Food" width="100%" />
+    <div style="width: 100%; height: 400px">
+      <div class="container-slider">
+        <div class="sliderWrap fade">
+          <img
+            src="images/banner.jpeg"
+            alt="Food Banner"
+            width="100%"
+            height="400"
+          />
+        </div>
+
+        <div class="sliderWrap fade">
+          <img
+            src="images/b1.jpeg"
+            alt="Food Banner"
+            width="100%"
+            height="400"
+          />
+        </div>
+
+        <div class="sliderWrap fade">
+          <img
+            src="images/b9.jpeg"
+            alt="Food Banner"
+            width="100%"
+            height="400"
+          />
+        </div>
+
+        <a class="prev-btn" onclick="changeSlide(-1)">❮</a>
+        <a class="next-btn" onclick="changeSlide(1)">❯</a>
+
+        <div style="text-align: center; margin-top: -40px">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- <img src="images/banner.jpeg" alt="Food" width="100%" /> -->
     </div>
 
     <div class="resources-container">
       <div class="content-container-resources">
-        <h1>Best Area for Food </h1>
+        <h1>Best Area for Food</h1>
         <span>Zamalek, Cairo Egypt</span>
         <div>
           <img src="images/egyptianfood.jpg" alt="Egyptian Nights" />
@@ -46,15 +96,17 @@
 
         <div class="resources-desc">
           <p>
-            Zamalek is a an upscale neighbohood in Cairo, Egypt. Often times reffered to as 
-            the "Manhattan of Egypt", Zamalek holds some of the finest resturants in Egypt. I
-            not only say this as a resident myself, but as a certified foodie. Zamalek sits on
-            a small island in between the Nile with beautiful foliage, and walkable green spaces.
-            There are plenty of places to immerse yourself into authentic Egyptian cusine. I would
-            suggest vising Abou El Sid to try some Koshari, Falafel, or an assortment of mezze. Beyond
-            just traditional Arabic food however, you can find an array of different cusines. Zamalek is 
-            a popular town amongst expats and young people, the food reflects the energy of 
-            Egypt's growing food scene. 
+            Zamalek is a an upscale neighbohood in Cairo, Egypt. Often times
+            reffered to as the "Manhattan of Egypt", Zamalek holds some of the
+            finest resturants in Egypt. I not only say this as a resident
+            myself, but as a certified foodie. Zamalek sits on a small island in
+            between the Nile with beautiful foliage, and walkable green spaces.
+            There are plenty of places to immerse yourself into authentic
+            Egyptian cusine. I would suggest vising Abou El Sid to try some
+            Koshari, Falafel, or an assortment of mezze. Beyond just traditional
+            Arabic food however, you can find an array of different cusines.
+            Zamalek is a popular town amongst expats and young people, the food
+            reflects the energy of Egypt's growing food scene.
           </p>
           <hr />
         </div>
@@ -63,16 +115,20 @@
         <h1>Resturant Worth Visting</h1>
         <span>Royal Maxim Palace Kempinski Cairo - Bab al Qasr</span>
         <div>
-          <img src="images/royal.jpg" alt="Egyptian Nights" />
+          <img src="images/royal.jpg" alt="Royal Palace" />
         </div>
 
         <div class="resources-desc">
           <p>
-           In my opinion, the best resturnat in Cairo, and my go-to recommendation for anyone travelling 
-           is the beautiful Bab al Qars (directly translates to "door of the palace") in the Royal Maxim Palace Kempinski Cairo. The vibe is 
-           immaculate, while you enjoy live entertaintment be sure to sip on some of their homemade mint 
-           lemonade. The view of the Nile is perfect to enjoy, especially in the evening as you feel the coastal winds. Many of the hotels
-           in Egypt offer adequate dining options, but in my opinion both the location and ambiance of Bab al Qars makes it a worthwile trip.
+            In my opinion, the best resturnat in Cairo, and my go-to
+            recommendation for anyone travelling is the beautiful Bab al Qars
+            (directly translates to "door of the palace") in the Royal Maxim
+            Palace Kempinski Cairo. The vibe is immaculate, while you enjoy live
+            entertaintment be sure to sip on some of their homemade mint
+            lemonade. The view of the Nile is perfect to enjoy, especially in
+            the evening as you feel the coastal winds. Many of the hotels in
+            Egypt offer adequate dining options, but in my opinion both the
+            location and ambiance of Bab al Qars makes it a worthwile trip.
           </p>
         </div>
       </div>
@@ -87,9 +143,9 @@
         <a href="mailto:info@escooter.com">info@egyptian.com</a>
       </p>
       <div class="social-icon">
-        <img src="images/fb.png" />
-        <img src="images/insta.png" />
-        <img src="images/twitter.png" />
+        <img src="images/fb.png" alt="Facebook" />
+        <img src="images/insta.png" alt="Instagram" />
+        <img src="images/twitter.png" alt="Twitter" />
       </div>
     </footer>
   </body>

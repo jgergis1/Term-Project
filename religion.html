@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Egyptian</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon1.ico" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/script.js"></script>
   </head>
   <body>
     <!-- HEADER ELEMENT -->
@@ -19,7 +24,14 @@
         height="60"
         class="logo"
       />
-      <ul class="navbar">
+      <a
+        href="javascript:void(0);"
+        class="horizontal-bars"
+        onclick="openMenu()"
+      >
+        <i class="fa fa-bars"></i>
+      </a>
+      <ul class="topnav" id="topNavMenu">
         <li>
           <a href="index.html">Home</a>
         </li>
@@ -38,6 +50,7 @@
         alt="Food"
         width="100%"
         height="320px"
+        alt="Religion Banner"
       />
     </div>
 
@@ -48,7 +61,7 @@
           <div class="content-thumb">
             <img
               src="images/chart.jpeg"
-              alt="Culture"
+              alt="Stats Chart"
               style="width: 400px; height: 300px"
             />
           </div>
@@ -86,9 +99,9 @@
         <a href="mailto:info@escooter.com">info@egyptian.com</a>
       </p>
       <div class="social-icon">
-        <img src="images/fb.png" />
-        <img src="images/insta.png" />
-        <img src="images/twitter.png" />
+        <img src="images/fb.png" alt="Facebook" />
+        <img src="images/insta.png" alt="Instagram" />
+        <img src="images/twitter.png" alt="Twitter" />
       </div>
     </footer>
   </body>

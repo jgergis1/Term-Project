@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Egyptian</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="icon" type="image/x-icon" href="images/favicon1.ico" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/script.js"></script>
   </head>
-  <body>
+  <body onload="onContentLoad()">
     <!-- HEADER ELEMENT -->
     <header>
       <img
@@ -19,7 +24,15 @@
         height="60"
         class="logo"
       />
-      <ul class="navbar">
+
+      <a
+        href="javascript:void(0);"
+        class="horizontal-bars"
+        onclick="openMenu()"
+      >
+        <i class="fa fa-bars"></i>
+      </a>
+      <ul class="topnav" id="topNavMenu">
         <li id="selected-nav-item">
           <a href="#">Home</a>
         </li>
@@ -42,36 +55,101 @@
     </div>
 
     <div class="container">
-      <table>
+      <table class="moto-section">
         <tr>
           <td>
             <div class="sections">
-              <img src="images/food2.jpeg" alt="Food" />
-              <h3>Classic</h3>
-              <p>
-                Just some random text, lorem ipsum text praesent tincidunt ipsum
-                lipsum.
+              <img
+                onmouseover="changeClassicMouseOver(1)"
+                onmouseout="changeClassicMouseOut(1)"
+                src="images/food2.jpeg"
+                alt="Food"
+                id="classic"
+                width="250"
+                height="300"
+                class="fade"
+              />
+              <h3>Cusines</h3>
+              <p id="classic-txt">
+             
               </p>
-              <button class="read-more-btn">Read More</button>
+              <button
+                class="read-more-btn"
+                id="read-more-classic"
+                onclick="readMore(1)"
+              >
+                Read More
+              </button>
+              <button
+                class="read-more-btn"
+                id="read-less-classic"
+                onclick="readLess(1)"
+              >
+                Read Less
+              </button>
             </div>
           </td>
           <td>
             <div class="sections">
-              <img src="images/culture.jpeg" alt="Cluture" />
-              <h3>Steaky</h3>
-              <p>
-                Once again, some random text to lorem lorem lorem lorem ipsum
-                text ipsum lipsum.
+              <img
+                onmouseover="changeClassicMouseOver(2)"
+                onmouseout="changeClassicMouseOut(2)"
+                src="images/culture.jpeg"
+                alt="Cluture"
+                id="cluture"
+                width="250"
+                height="300"
+              />
+              <h3>molokhiya</h3>
+              <p id="steaky-txt">
+             
               </p>
-              <button class="read-more-btn">Read More</button>
+              <button
+                class="read-more-btn"
+                id="read-more-steaky"
+                onclick="readMore(2)"
+              >
+                Read More
+              </button>
+              <button
+                class="read-more-btn"
+                id="read-less-steaky"
+                onclick="readLess(2)"
+              >
+                Read Less
+              </button>
             </div>
           </td>
           <td>
             <div class="sections">
-              <img src="images/food.jpeg" alt="Culture" />
-              <h3>Defining</h3>
-              <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-              <button class="read-more-btn">Read More</button>
+              <img
+                onmouseover="changeClassicMouseOver(3)"
+                onmouseout="changeClassicMouseOut(3)"
+                src="images/food.jpeg"
+                alt="Defining"
+                id="defining"
+                width="250"
+                height="300"
+              />
+              <h3>Food</h3>
+              <p id="defining-txt">
+               
+              </p>
+              <button
+                class="read-more-btn"
+                id="read-more-defining"
+                onclick="readMore(3)"
+              >
+                Read More
+              </button>
+
+              <button
+                class="read-more-btn"
+                id="read-less-defining"
+                onclick="readLess(3)"
+              >
+                Read Less
+              </button>
             </div>
           </td>
         </tr>
@@ -89,18 +167,15 @@
           </div>
           <div class="content-desc">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              imperdiet, nulla et dictum interdum, nisi lorem egestas odio,
-              vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
-              ultrices nec congue eget, auctor vitae massa. Fusce luctus
-              vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed
-              ornare eu, lobortis in odio. Praesent convallis urna a lacus
-              interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed
-              ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
-              imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
-              venenatis. Integer fringilla congue eros non fermentum. Sed
-              dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis
-              diam velit.
+              Egyptian cuisine makes heavy use of legumes, vegetables and fruit from Egypt's rich Nile Valley and Delta. Examples of Egyptian dishes include rice-stuffed vegetables and grape leaves, hummus, falafel, shawarma, kebab and kofta. ful medames, mashed fava beans; kushari, lentils and pasta; and molokhiya, bush okra stew. A local type of pita bread known as eish baladi (Egyptian Arabic: عيش بلدي) is a staple of Egyptian cuisine, and cheesemaking in Egypt dates back to the First Dynasty of Egypt, with domty being the most popular type of cheese consumed today.
+
+Common meats in Egyptian cuisine are squab, chicken, and lamb. Lamb and beef are frequently used for grilling. Offal is a popular fast food in cities, and foie gras is a delicacy that has been prepared in the region since at least 2500 BCE.
+
+Fish and seafood are common in Egypt's coastal regions. A significant amount of Egyptian cuisine is vegetarian, due to both the historically high price of meat and the needs of the Coptic Christian community, whose religious restrictions require essentially vegan diets for much of the year.
+
+Tea is the national drink of Egypt, and beer is the most popular alcoholic beverage. While Islam is the majority faith in Egypt and observant Muslims tend to avoid alcohol, alcoholic drinks are still readily available in the country.
+
+Popular desserts in Egypt include baqlawa, basbousa, and kunafa. Common ingredients in desserts include dates, honey, and almonds.
             </p>
           </div>
         </div>
@@ -156,18 +231,8 @@
         <div class="content-left-image">
           <div class="content-desc">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              imperdiet, nulla et dictum interdum, nisi lorem egestas odio,
-              vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
-              ultrices nec congue eget, auctor vitae massa. Fusce luctus
-              vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed
-              ornare eu, lobortis in odio. Praesent convallis urna a lacus
-              interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed
-              ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
-              imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
-              venenatis. Integer fringilla congue eros non fermentum. Sed
-              dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis
-              diam velit.
+              An enigmatic treasure trove of almost unimaginable archaeological and cultural riches, it's hard not to think of Egypt without imagining the Sphinx, the pyramids at Giza, Luxor, the Valley of the Kings and the Nile. As well as being the world's largest open-air museum, Egypt also offers a slew of luxurious Red Sea resorts, many within reach of spectacular snorkeling, diving and windsurfing. Whether you see it by riverboat, from camelback or from just above the coral, Egypt's sights are unforgettable.
+
             </p>
           </div>
           <div class="content-thumb">
@@ -181,11 +246,36 @@
       </div>
 
       <div class="places-to-visit">
-        <h2>The Egyptian Museum</h2>
-        <h2>Valley of the Kings</h2>
-        <h2>Abu Simbel Temples</h2>
-        <h2>Karnak</h2>
-        <h2>Philae</h2>
+        <a
+          class="redirect-sites-link"
+          href="https://en.wikipedia.org/wiki/Egyptian_Museum"
+          target="_blank"
+          ><h2>The Egyptian Museum</h2></a
+        >
+        <a
+          class="redirect-sites-link"
+          href="https://en.wikipedia.org/wiki/Valley_of_the_Kings"
+          target="_blank"
+          ><h2>Valley of the Kings</h2></a
+        >
+        <a
+          class="redirect-sites-link"
+          href="https://en.wikipedia.org/wiki/Abu_Simbel"
+          target="_blank"
+          ><h2>Abu Simbel Temples</h2></a
+        >
+        <a
+          class="redirect-sites-link"
+          href="https://en.wikipedia.org/wiki/Karnak"
+          target="_blank"
+          ><h2>Karnak</h2></a
+        >
+        <a
+          class="redirect-sites-link"
+          href="https://en.wikipedia.org/wiki/Philae"
+          target="_blank"
+          ><h2>Philae</h2></a
+        >
       </div>
     </div>
 
@@ -198,9 +288,9 @@
         <a href="mailto:info@escooter.com">info@egyptian.com</a>
       </p>
       <div class="social-icon">
-        <img src="images/fb.png" />
-        <img src="images/insta.png" />
-        <img src="images/twitter.png" />
+        <img src="images/fb.png" alt="Facebook" />
+        <img src="images/insta.png" alt="Instagram" />
+        <img src="images/twitter.png" alt="Twitter" />
       </div>
     </footer>
   </body>
